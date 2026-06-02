@@ -1,8 +1,8 @@
-import React from 'react';
+import type { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 
 type SectionTransitionProps = {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
   id?: string;
 };

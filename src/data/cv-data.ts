@@ -1,13 +1,8 @@
 import { 
-  Code2, 
   Database, 
   Layout, 
   Terminal, 
-  LineChart,
-  BrainCircuit,
-  GraduationCap,
-  Trophy,
-  Briefcase
+  BrainCircuit
 } from "lucide-react";
 
 export const cvData = {

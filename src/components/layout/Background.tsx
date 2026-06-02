@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from 'react';
+import { useRef, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 
@@ -20,7 +20,7 @@ function ParticleNetwork(props: any) {
     return positions;
   }, []);
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     if (ref.current) {
       ref.current.rotation.x -= delta / 15;
       ref.current.rotation.y -= delta / 20;

@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { cvData } from '@/data/cv-data';
 import { Calendar, MapPin } from 'lucide-react';
