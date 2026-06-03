@@ -45,7 +45,9 @@ export const Contact = () => {
                 <h4 className="text-lg font-bold text-gray-200 mb-1">Email</h4>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-2">
                   <a 
-                    href={`mailto:${cvData.personal.email}?subject=Portfolio%20Inquiry`} 
+                    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${cvData.personal.email}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2 text-sm break-all"
                   >
                     {cvData.personal.email} <ExternalLink size={14} />
@@ -114,7 +116,9 @@ export const Contact = () => {
           </div>
           
           <a
-            href="mailto:habeebur.rahaman.vlr.03@gmail.com?subject=Hello%20from%20your%20portfolio&body=Hi%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${cvData.personal.email}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-10 py-5 rounded-xl bg-primary hover:bg-white text-black font-bold text-lg transition-all shadow-[0_0_40px_-10px_rgba(192,192,192,0.4)] hover:shadow-[0_0_60px_-10px_rgba(192,192,192,0.6)]"
           >
             Say Hello

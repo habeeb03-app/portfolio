@@ -12,7 +12,7 @@ export const Footer = () => {
           <a href={cvData.personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">
             <Linkedin size={20} />
           </a>
-          <a href={`mailto:${cvData.personal.email}`} className="text-slate-400 hover:text-cyan-400 transition-colors">
+          <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${cvData.personal.email}`} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">
             <Mail size={20} />
           </a>
         </div>
