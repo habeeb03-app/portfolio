@@ -41,7 +41,7 @@ function App() {
           </SectionTransition>
           
           <SectionTransition>
-            <Contact onOpenModal={() => setIsModalOpen(true)} />
+            <Contact />
           </SectionTransition>
         </div>
       </main>

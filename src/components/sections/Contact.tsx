@@ -4,11 +4,7 @@ import { cvData } from '@/data/cv-data';
 import { Mail, MapPin, Phone, Linkedin, ExternalLink } from 'lucide-react';
 import { CopyTooltip } from '../ui/CopyTooltip';
 
-type ContactProps = {
-  onOpenModal: () => void;
-};
-
-export const Contact = ({ onOpenModal }: ContactProps) => {
+export const Contact = () => {
   const [phoneCopied, setPhoneCopied] = useState(false);
 
   const handlePhoneClick = (e: React.MouseEvent) => {
@@ -117,12 +113,12 @@ export const Contact = ({ onOpenModal }: ContactProps) => {
             </div>
           </div>
           
-          <button 
-            onClick={onOpenModal}
+          <a
+            href="mailto:habeebur.rahaman.vlr.03@gmail.com?subject=Hello%20from%20your%20portfolio&body=Hi%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
             className="inline-block px-10 py-5 rounded-xl bg-primary hover:bg-white text-black font-bold text-lg transition-all shadow-[0_0_40px_-10px_rgba(192,192,192,0.4)] hover:shadow-[0_0_60px_-10px_rgba(192,192,192,0.6)]"
           >
             Say Hello
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>
